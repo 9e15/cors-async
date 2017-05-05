@@ -18,8 +18,9 @@
     "test": "mocha"
   },
   "keywords": [
-    "cors",
     "async",
+    "cors",
+    "express",
     "promise"
   ],
   "dependencies": {
