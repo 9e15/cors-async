@@ -1,0 +1,29 @@
+- pipeline: "Publish"
+  trigger_mode: "ON_EVERY_PUSH"
+  ref_name: "master"
+  actions:
+  - action: "ESLint"
+    type: "BUILD"
+    docker_image_name: "library/node"
+    docker_image_tag: "7"
+    execute_commands:
+    - "yarn install"
+    - "yarn run lint"
+  - action: "Publish"
+    type: "BUILD"
+    docker_image_name: "library/node"
+    docker_image_tag: "7"
+    execute_commands:
+    - "npm-cli-login -u '${NPM_LOGIN}' -p '${NPM_PASSWORD}' -e '${NPM_EMAIL}'"
+    - "publish"
+    setup_commands:
+    - "yarn global add npm-cli-login publish"
+  - action: "Send Email notification"
+    type: "EMAIL"
+    title: "New version of ${project.name} available!"
+    content: "Hi Buddy,\n\nnew version of the project was
+      successfully published. Enjoy!\n\nbest wishes,\n9e15 team"
+    recipients: "nsagol@9e15.net Natan Sągol\n
+      mkownacki@9e15.net Michał Kownacki\n
+      mchyb@9e15.net Mateusz Chyb"
+      
