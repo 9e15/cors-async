@@ -9,7 +9,7 @@ $ npm install cors-async
 
 ## API
 
-Same as cors but returns promise instead invoking of callback.
+Same as cors but returns promise instead of invoking callback.
 
 Examples:
 
