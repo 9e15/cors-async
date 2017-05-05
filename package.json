@@ -1,5 +1,5 @@
 {
-  "name": "true-typeof",
+  "name": "cors-async",
   "version": "0.1.0",
   "description": "Like cors but async.",
   "main": "index.js",
