@@ -2,31 +2,26 @@
   "name": "cors-async",
   "version": "0.1.0",
   "description": "Like cors but async.",
+  "author": "Michał Kownacki <mkownacki@9e15.net> (https://github.com/kownacki)",
+  "license": "MIT",
   "main": "index.js",
+  "homepage": "https://github.com/9e15/cors-async",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/9e15/cors-async.git"
+  },
+  "bugs": {
+    "url": "https://github.com/9e15/cors-async/issues"
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "test": "mocha"
+  },
   "keywords": [
     "cors",
     "async",
     "promise"
   ],
-  "scripts": {
-    "lint": "eslint .",
-    "test": "mocha"
-  },
-  "engines": {
-    "node": ">= 0.10.x"
-  },
-  "homepage": "https://github.com/kownacki/cors-async",
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/kownacki/cors-async.git"
-  },
-  "bugs": {
-    "url": "https://github.com/kownacki/cors-async/issues"
-  },
-  "author": {
-    "name": "Michał Kownacki <michal_kownacki@o2.pl> (https://github.com/kownacki)"
-  },
-  "license": "MIT",
   "dependencies": {
     "cors": "^2.8.3"
   },
