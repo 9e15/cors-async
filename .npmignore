@@ -1,4 +1,4 @@
-.idea/
 .npmignore
-.travis.yml
+docker-compose.yml
+buddy.yml
 test.js
