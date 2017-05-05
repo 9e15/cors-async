@@ -1,4 +1,3 @@
-[![Build Status](https://travis-ci.org/kownacki/cors-async.svg?branch=master)](https://travis-ci.org/kownacki/cors-async)
 # cors-async
 
 Like [cors](https://www.npmjs.com/package/cors) but async.
