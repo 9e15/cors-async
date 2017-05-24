@@ -9,6 +9,10 @@ Same as cors but returns promise instead of invoking callback.
 Examples:
 
 ```javascript
+  const corsAsync = require('cors-async')(/* options here */);
+
+  ...
+
   return corsAsync(req, res)
     .then(() => {
       // next handler
