@@ -1,6 +1,6 @@
 {
   "name": "cors-async",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Like cors but async.",
   "author": "Michał Kownacki <mkownacki@9e15.net> (https://github.com/kownacki)",
   "license": "MIT",
