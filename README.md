@@ -1,5 +1,7 @@
 # cors-async
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/9e15/cors-async.svg)](https://greenkeeper.io/)
+
 Like [cors](https://www.npmjs.com/package/cors) but async.
 
 ## API
